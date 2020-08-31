@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Pro Plan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" id="theme-css" href="css/style.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script> -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+<script src="js/newscript.js"></script>
+</head>
+<style>
+    /** New Css Code **/
+@font-face {
+  font-family: rimouskisb;
+  src: url(https://www.jennadeleonfit.com/macro-calculator-paid1/fonts/rimouskisb.ttf);
+}    
+.goal input:checked+span {
+    background: #1B8CFF;
+    color: white;
+}
+
+.macro-calculator form .goal input:checked+span:before {
+    font-size: 1em;
+    opacity: 1
+}
+/*
+.macro-calculator form .goal span {
+    border-radius: 50%;
+    padding: 60px 10px;
+    width: 85% !important;
+    line-height: 0px;
+    font-size: 20px;
+}
+.macro-calculator form .goal span {
+    background: #fff;
+    border: 1px solid #1B8CFF;
+    color: #676b6e;
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    height: 4rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 3;
+    border: 5px solid #96caff;
+}
+*/
+.macro-calculator form .goal span {
+   background: #fff;
+   border: 0px solid #1B8CFF;
+   color: #676b6e;
+   position: relative;
+   z-index: 3;
+   width: 81% !important;
+   line-height: 0px;
+   font-size: 20px;
+   padding-bottom: 41% !important;
+   padding-top: 42% !important;
+   padding-left: initial;
+   padding-right: inherit;
+}
+/*
+.macro-calculator form .goal span:before {
+    color: #1B8CFF;
+    content: '\f00c';
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2rem;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}*/
+.macro-calculator form .goal span:before {
+   display: block;
+   padding-bottom: 94%;
+   width: 100%;
+   height: 0;
+   border-radius: 50%;
+   background-color: #1b8cff00;
+   content: "";
+   top: 0px;
+   border: 6px solid #96caff;
+   position: absolute;
+   left: 0;
+   z-index: -1;
+   opacity: 1;
+}
+.macro-calculator form .goal input:checked+span:before {
+   font-size: 1em;
+   opacity: 1;
+   background-color: #1b8cff;
+   color: black;
+}
+.macro-calculator form .goal input:checked+span {
+    color: white;
+}/*
+.bday + .group-3 .goal span {
+    width: 100% !important;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 0px;
+    background: white;
+    margin-top: -16px;
+    line-height: 0px !important;
+    height: auto !important;
+    font-size: 20px;
+}
+.bday + .group-3 .goal input:checked+span {
+    background: #1B8CFF;
+    color: white;
+    margin-top: -18px;
+    padding: 18px 0px;
+    border-radius: 20px;
+}
+.bday + .group-3 .goal span:before {
+    display: none;    
+}
+.bday + .group-3 .goal label {
+    border: 1px solid black;
+    height: 32px;
+    margin: 0px;
+    border-radius: 50px;
+    padding: 16px;
+}
+.bday + .group-3 .goal label:nth-child(2) {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.bday + .group-3 .goal label:nth-child(3) {
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.bday + .group-3 .goal label:nth-child(4) {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.bday + .group-3 .goal label:nth-child(4) input:checked+span {
+    right: -17px;
+}
+.bday + .group-3 .goal label:nth-child(2) input:checked+span {
+    left: -17px;
+}*/
+.group-2 .activity label {
+    margin: 0 0 1rem 0 !important;
+    width: 20% !important;
+    float: left !important;
+    clear: none !important;
+}
+.group-2 .activity label span {
+   background: #fff;
+   border: 0px solid #1B8CFF;
+   color: #676b6e;
+   position: relative;
+   z-index: 3;
+   width: 82% !important;
+   line-height: normal !important;
+   font-size: 19px;
+   padding-bottom: 41% !important;
+   padding-top: 42% !important;
+   padding-left: initial;
+   padding-right: inherit;
+   opacity: 1 !important;
+   height: auto !important;
+}
+.macro-calculator form .activity input:checked+span:before {
+   font-size: 1em;
+   opacity: 1;
+   background-color: #1b8cff;
+   color: white !important;
+   z-index: -1;
+}
+.group-2 .activity label span:before {
+display: block;
+padding-bottom: 94%;
+width: 100%;
+height: 0;
+border-radius: 50%;
+background-color: #1b8cff00;
+content: "";
+top: 0px;
+border: 6px solid #96caff;
+position: absolute;
+left: 0;
+z-index: -1;
+opacity: 1;
+}
+.group-2 .activity label input:checked+span {
+   background: #1b8cff00;
+   color: white;
+}
+/*.group-2 .activity label input:checked+span:before, .macro-calculator form .goal input:checked+span:before {
+    display: none;    
+}*/
+.container {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 60%;
+}
+.macro-calculator form .goal label {
+    display: block;
+    width: 20%;
+    float: left;
+}
+body {
+    padding: 0px 10px 10px !important;
+}/*
+.bday + .group-3 .goal label {
+    width: 12%;
+}*/
+button.button {
+    background: #1b8cff;
+    font-size: 24px;
+    width: 22%;
+    padding: 0px 0px !important;
+}
+/* .macro-calculator .macro-results .results-numbers .result.fat {
+    background-image: url(https://www.jennadeleonfit.com/wp-content/uploads/2020/04/avocado-icon-fats.png);
+}
+.macro-calculator .macro-results .results-numbers .result.carbs {
+    background-image: url(https://www.jennadeleonfit.com/wp-content/uploads/2020/04/grain-icon-carbs.png);
+}
+
+.macro-calculator .macro-results .results-numbers .result.protein {
+    background-image: url(https://www.jennadeleonfit.com/wp-content/uploads/2020/04/salmon-icon-protien.png);
+}
+.macro-calculator .macro-results .results-numbers .result.calories {
+    background-image: url(https://www.jennadeleonfit.com/wp-content/uploads/2020/04/fire-icon-calories.png);
+} */
+button.button:focus {
+    outline: none;
+}
+.macro-calculator form .goal .allsame span:before {
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+.macro-calculator form .goal .allsames span:before {
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+.macro-calculator form .goal .firstt {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-right: none;
+    margin-bottom: 0px !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.macro-calculator form .goal .secondd {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+margin-bottom: 0px !important;
+}
+.macro-calculator form .goal .thirdd {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-left: none;
+    margin-bottom: 0px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.macro-calculator form .goal .firsttd {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-right: none;
+    margin-bottom: 0px !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.macro-calculator form .goal .seconddd {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+margin-bottom: 0px !important;
+}
+.macro-calculator form .goal .thirddd {
+    border: 2px solid #96caff;
+    height: 40px;
+    border-left: none;
+    margin-bottom: 0px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.macro-calculator form .goal .allsame span {
+    width: 100% !important;
+}
+.macro-calculator form .goal .allsames span {
+    width: 100% !important;
+}
+.macro-calculator form .goal .allsame span {
+    padding: 0px !important;
+    height: 0px !important;
+    line-height: 40px;
+    font-size: 20px !important;
+}
+.macro-calculator form .goal .allsame span {
+    height: 36px !important;
+}
+.macro-calculator form .goal .allsame input:checked+span {
+    background: #1b8cff;
+    height: 40px !important;
+    top: -2px;
+    border: 2px solid #1b8cff;
+    font-size: 24px !important;
+}
+.macro-calculator form .goal .allsames span {
+    padding: 0px !important;
+    height: 0px !important;
+    line-height: 40px;
+    font-size: 20px !important;
+}
+.macro-calculator form .goal .allsames span {
+    height: 36px !important;
+}
+.macro-calculator form .goal .allsames input:checked+span {
+    background: #1b8cff;
+    height: 40px !important;
+    top: -2px;
+    border: 2px solid #1b8cff;
+    font-size: 24px !important;
+}
+p.text-after-heading {
+    font-family: rimouskisb !important;
+}
+.what-to-eat, .new-h2 {
+    font-size: 34px;
+    margin: 30px 0px 15px !important;
+}
+.results-meals-1 p {
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    line-height: normal;
+    background: #1b8cff;
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+h2.text-center.what-to-eat {
+    margin-top: 20px;
+}
+.table td, .table th {
+    font-size: 20px;
+}
+span.small-g {
+    font-size: 14px;
+    margin-left: 4px;
+}
+hr.dotted {
+    border-top: 8px solid #1b8cff;
+    border-radius: 31px;
+    width: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+@media (max-width: 768px){
+.results-meals-1 p  {
+    width: 100%;
+}
+.container {
+    max-width: 100%;
+    padding: 0px;
+}
+.group-2 .activity label {
+    width: 32% !important;
+    margin: 2px !important;
+}
+.group-2 .activity label span {
+    width: 100% !important;
+    height: 110px;
+    padding: 28px 0px;
+}
+.macro-calculator form .goal label {
+    width: 32% !important;
+    margin: 2px !important;
+}/*
+.macro-calculator form .goal span {
+    width: 100% !important;
+    padding: 50px 0px;
+}*/
+.bday + .group-3 .goal label {
+    margin: 0px !important;
+    width: 33% !important;
+}
+button.button {
+    width: 50%;
+}
+.buttonnn {
+    text-align: center;
+}
+.macro-calculator form .goal span {
+    width: 100% !important;
+    padding-bottom: 50% !important;
+    padding-top: 50% !important;
+}
+.macro-calculator form .goal .allsame {
+    margin: 0px !important;
+    width: 33% !important;
+}
+.macro-calculator form .goal .allsames {
+    margin: 0px !important;
+    width: 20% !important;
+}
+h1.left.mainheading, p.text-after-heading {
+    text-align: center !important;
+} 
+p.text-after-heading {
+    line-height: 17px;
+    color: black;
+    font-size: 12px !important;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+.avyeen {
+    display: flex;
+    flex-flow: wrap;
+}
+.avyeen fieldset.bday {
+    order: 1;
+    width: 30%;
+    clear: none;
+}
+.avyeen fieldset.bday #birthday {
+    width: 80%;
+}
+.avyeen fieldset.unit {
+    order: 3;
+}
+.avyeen fieldset.weight {
+    order: 4;
+    margin-left: 15px;
+}
+
+
+.avyeen fieldset.height {
+    order: 2;
+    width: fit-content;
+    float: left;
+    margin-left: 15px;
+}
+.macro-calculator .macro-results .results-numbers .result {
+    background-size: 5rem auto;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+hr.dotted {
+    width: 60%;
+}
+.table td, .table th {
+    font-size: 17px;
+}
+}
+.hide
+{
+    visibility: hidden !important;
+}
+.show
+{
+    visibility: visible !important;
+}
+
+/**************/
+</style>
+<body>
+    
+    <div class="container">
+       
+        <article class="post-46 page type-page status-publish hentry" id="post-46">
+    <h1 class="left mainheading" style="font-family: 'Bebas Neue', cursive;color: #1B8CFF; text-align: left;font-size: 50px;" >Macro Calculator</h1>
+    <p class="text-after-heading" style="text-align: left;font-family: Arial; font-size: 17px;">Input the information below as accurately as possible to view your Macronutrient Pro Breakdown. If you are having trouble with what to input, please reference your email with the instructions. These results are highly accurate, and I will be available via email for any additional questions. Enjoy! :)</p>
+
+    <section class="macro-calculator" style="font-family: 'Bebas Neue', cursive;">
+        <form action="index.html" id="macro-calculator-form">
+            <div class="group group-1"> 
+                <fieldset class="textbday">
+                    <legend style="font-family: 'Bebas Neue', cursive;">Full Name</legend>
+                    <input type="text" name="Name" id="Name" >
+                </fieldset>
+
+                <fieldset class="textbday">
+                    <legend>Email Address</legend>
+                    <input type="email" name="Email" id="Email">
+                </fieldset>
+
+                <fieldset class="gender">
+                    <legend>Gender</legend>
+                    <label class="left"><input type="radio" name="gender" value="female" checked=""><span>Female</span></label>
+                    <label class="right"><input type="radio" name="gender" value="male"><span>Male</span></label>
+                </fieldset>
+                <div class="avyeen">
+                <fieldset class="bday">
+                    <legend>Age</legend>
+                    <input type="number" name="birthday" id="birthday" required>
+                </fieldset>
+
+                <fieldset class="unit">
+                    <legend>Units</legend>
+                    <label class="left"><input type="radio" name="unit" value="imperial" checked=""><span>lb</span></label>
+                    <label class="right"><input type="radio" name="unit" value="metric"><span>kg</span></label>
+                </fieldset>
+
+                <fieldset class="weight" data-unit="imperial">
+                    <legend>Weight</legend>
+                    <label class="imperial"><input type="text" id="weight-lbs" name="weight-lbs" maxlength="3">lbs</label>
+                    <label class="metric"><input type="text" id="weight-kg" name="weight-kg" maxlength="3">kg</label>
+                </fieldset>
+
+                <fieldset class="height" data-unit="imperial">
+                    <legend>Height</legend>
+                    <label class="imperial"><input type="text" id="height-ft" name="height-ft" maxlength="1">ft</label>
+                    <label class="imperial"><input type="text" id="height-in" name="height-in" maxlength="2">in</label>
+                    <label class="metric"><input type="text" id="height-cm"  name="height-cm" maxlength="3">cm</label>
+                </fieldset>
+            </div>
+            </div>
+
+            <div class="group group-2">
+                <fieldset class="activity">
+                    <legend>WHAT IS YOUR CURRENT WEEKLY EXERCISE LEVEL</legend>
+                    <label><input type="radio" name="activity" value="1.3"><span>Little<br>To None</span></label>
+                    <label><input type="radio" name="activity" value="1.45"><span>3-4x<br>per week</span></label>
+                    <label><input type="radio" name="activity" value="1.7" checked=""><span>5x+<br>per week</span></label>
+                </fieldset>
+            </div>
+
+            <div class="group group-3">
+                <fieldset class="goal">
+                    <legend>What Is Your Primary Goal</legend>
+                    <label><input type="radio" name="goal" value="lose"><span>Weight Loss</span></label>
+                    <label><input type="radio" name="goal" value="gain"><span>Weight Gain</span></label>
+                    <label><input type="radio" name="goal" value="both" checked=""><span>Tone Up</span></label>
+                </fieldset>
+            </div>
+            <div class="group group-3">
+                <fieldset class="goal">
+                    <legend>Total Meals (Snacks Included)</legend>
+                <div class="more-fcss">
+                    <label class="firstt allsame"><input type="radio" name="meals" value="4"  id="m4"><span>4</span></label>
+                    <label class="secondd allsame"><input type="radio" name="meals" value="5"  id="m5"><span>5</span></label>
+                    <label class="thirdd allsame"><input type="radio" name="meals" value="6" checked="" id="m6"><span>6</span></label>
+                </div>
+                </fieldset>
+            </div>
+            <div class="group group-3">
+                <fieldset class="goal">
+                    <legend>Total Meals Before Training</legend>
+                <div class="more-fcss">
+                    <label class="firsttd allsames"><input type="radio" name="mealsbt" value="1"><span>1</span></label>
+                    <label class="seconddd allsames"><input type="radio" name="mealsbt" value="2" checked=""><span>2</span></label>
+                    <label class="seconddd allsames" id="lbl3"><input type="radio" name="mealsbt" value="3" ><span>3</span></label>
+                    <label class="seconddd allsames" id="lbl4"><input type="radio" name="mealsbt" value="4" ><span>4</span></label>
+                    <label class="thirddd allsames" id="lbl5"><input type="radio" name="mealsbt" value="5" ><span>5</span></label>
+                </div>
+                </fieldset>
+                <script>
+                    $(document).ready(function(){
+                        
+                        $('input[type=radio][name="meals"]').change(function() {
+                            var m = parseInt($('input:radio[name="meals"]:checked').val());
+                        switch(m)
+                        {
+                            case 4:
+                                $("#lbl4").addClass("hide");
+                                $("#lbl4").removeClass("show");
+                                $("#lbl4").removeClass("seconddd");
+                                
+                                $("#lbl5").addClass("hide");
+                                $("#lbl5").removeClass("show");
+                                $("#lbl5").removeClass("seconddd");
+                                
+                                $("#lbl3").addClass("thirddd");
+                                $("#lbl3").removeClass("seconddd");
+                                break;
+                            case 5:
+                                $("#lbl4").addClass("show");
+                                $("#lbl4").removeClass("hide");
+                                $("#lbl4").addClass("thirddd");
+                                $("#lbl4").removeClass("seconddd");
+
+                                $("#lbl3").removeClass("thirddd");
+                                $("#lbl3").addClass("seconddd");
+                                
+                                $("#lbl5").addClass("hide");
+                                $("#lbl5").removeClass("show");
+                                $("#lbl5").addClass("thirddd");
+                                break;
+                            case 6:
+                                $("#lbl4").addClass("show");
+                                $("#lbl4").removeClass("hide");
+                                $("#lbl4").addClass("seconddd");
+                                $("#lbl4").removeClass("thirddd");
+
+                                $("#lbl3").removeClass("thirddd");
+                                $("#lbl3").addClass("seconddd");
+                                
+                                $("#lbl5").removeClass("hide");
+                                $("#lbl5").addClass("thirddd");
+                                $("#lbl5").addClass("show");
+                                break;
+                        }
+                        });
+                    });
+                </script>
+            </div>
+            
+            <div class="buttonnn">
+            <button class="button" type="submit">Calculate</button>
+        </div>
+        </form>
+            <hr class="dotted">
+        <section class="macro-results" id="macro-results">
+            <h2 class="text-center new-h2">Results</h2>
+            <div class="results-numbers">
+
+                <h3 class="result protein">Protein <span class="number" id="result-protein">9999</span> <span class="txt">Grams Per Day</span></h3>
+                <h3 class="result carbs">Carbs <span class="number" id="result-carbs">9999</span> <span class="txt">Grams Per Day</span></h3>
+                <h3 class="result fat">Fat <span class="number" id="result-fat">9999</span> <span class="txt">Grams Per Day</span></h3>
+                <h3 class="result calories">Calories <span class="number" id="result-calories">9999</span> <span class="txt">Calories Per Day</span></h3>
+            </div>
+             <div class="row">
+                <div class="col-md-12 userdetail"></div>
+             </div>
+             <table class="table table-borderless" align="center">
+               <thead>
+               	<tr>
+                    <th style="color: #111">Meal</th>
+                    <th style="color: #1B8CFF">Proteins</th>
+                    <th style="color: #00003F">Carbs</th>
+                    <th style="color: #E06F00">Fats</th>
+                    <th style="text-align: center;">Meal Calories</th>
+                </tr>
+               </thead>
+                
+                <tbody class="tablemeal">
+                   
+                </tbody>
+                <span id="RNotee"></span> 
+            </table>
+                <hr class="dotted">
+            <h2 class="text-center what-to-eat">When to Eat what?</h2>
+            <div class="row">
+                <div class="col-md-12 mealdetail"></div>
+             </div>
+                <hr class="dotted">
+            <h2 class="text-center new-h2">Daily Macronutrients Breakdown</h2>
+            <div class="results-numbers">
+                <h3 class="result protein">Protein <span class="number" id="result-proteinp">9999</span> <span class="txt">Percent Of Calories</span></h3>
+                <h3 class="result carbs">Carbs <span class="number" id="result-carbsp">9999</span> <span class="txt">Percent Of Calories</span></h3>
+                <h3 class="result fat">Fat <span class="number" id="result-fatp">9999</span> <span class="txt">Percent Of Calories</span></h3>
+                <h3 class="result calories">Calories <span class="number" id="result-caloriesp">9999</span> <span class="txt">Meal Calories</span></h3>
+            </div>
+        </section>
+    </section>
+    <button id="save">Download</button>
+</article>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script> 
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script src="js/html2canvas.min.js"></script>
+<script src="js/canvas2image.js"></script>
+  <script>
+    var test = $("#macro-results").get(0);
+    // to canvas
+/*$('.toCanvas').click(function(e) {
+  html2canvas(test).then(function(canvas) {
+    // canvas width
+    var canvasWidth = canvas.width;
+    // canvas height
+    var canvasHeight = canvas.height;
+    // render canvas
+    $('.toCanvas').after(canvas);
+    // show 'to image' button
+    $('.toPic').show(1000);
+    // convert canvas to image
+    $('.toPic').click(function(e) {
+      var img = Canvas2Image.convertToImage(canvas, canvasWidth, canvasHeight);
+      // render image
+      $(".toPic").after(img);
+      // save
+      $('#save').click(function(e) {
+        let type = "png"; // image type
+        let w = 1100; // image width
+        let h = 1655; // image height
+        let f = "result"; // file name
+        w = (w === '') ? canvasWidth : w; 
+        h = (h === '') ? canvasHeight : h;
+        // save as image
+        Canvas2Image.saveAsImage(canvas, w, h, type, f);
+      });
+    });
+  });
+});*/
+$('#save').click(function(e) {
+  html2canvas(test).then(function(canvas) {
+    // canvas width
+    var canvasWidth = canvas.width;
+    // canvas height
+    var canvasHeight = canvas.height;
+    // render canvas
+    //var img = Canvas2Image.convertToPNG(canvas, canvasWidth, canvasHeight);
+      // render image
+    var type = 'png'; // image type
+    var w = canvasWidth; // image width
+    var h = canvasHeight; // image height
+    //let f = 'result'; // file name
+    // save as image
+    Canvas2Image.saveAsImage(canvas,w,h,type);
+  });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
